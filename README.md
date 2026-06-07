@@ -42,11 +42,13 @@ python agent.py
 ```
 
 ## Project Structure
+```
 ├── agent.py              # Training loop, epsilon-greedy policy, logging
 ├── dqn.py                # Neural network (Dueling DQN architecture)
 ├── experience.py         # Replay buffer implementation
 ├── hyperparameter.yml    # All tunable hyperparameters
 └── runs/                 # Saved model weights and training plots
+```
 ## Key Learnings
 
 - Replay buffer size critically affects stability — 10,000 caused catastrophic forgetting; 50,000 resolved it
